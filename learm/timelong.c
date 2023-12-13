@@ -13,8 +13,15 @@ int main()
     int time1 = hours_1 * 60 + minuet_1;
     int time2 = hours_2 * 60 + minuet_2;
     int time = time2-time1;
+
+ //如果跨天呢？？
+    if (time<0){
+        time2 = (hours_2+24)*60 + minuet_2;
+        time = time2-time1;
+    }
+    
     printf("时间差为%d小时%d分钟", time/60, time%60);
-    //如果跨天呢？？
+
 
     return 0;
 }
