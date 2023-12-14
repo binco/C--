@@ -4,12 +4,18 @@ int main()
     int num;
     scanf("%d", &num);
     int fact = 1;
- //   int i = 1;
-    for (int i = 1; i <= num; i++)
+   // int i = num;
+    for ( ; num > 1; num--)
     {
-      fact *= i;   /* code */
+       fact *=num; /* code */
     }
     
+ //   int i = 1;
+//  for (int i = 1; i <= num; i++)
+//  {
+//    fact *= i;   /* code */
+//  }
+//  
 //  while (i<=num)
 //  {
 //      fact *=i;
